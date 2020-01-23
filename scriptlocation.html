@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<script>
+function showLocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            console.log(position.coords.longitude);
+            console.log(position.coords.latitude);
+        });
+
+    }
+}
+</script>
+<body>
+<button type ="button" onclick="showLocation()"> butt0n</button>
+</body>
+</html>
