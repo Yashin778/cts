@@ -1,0 +1,28 @@
+<html>
+<head><b>
+    Enter something <br>
+</b>
+<script>
+function checkForm(form)
+{
+    if(form.name.value==""){
+        alert("it is empty");
+        return false;
+    }
+    return true;
+
+}
+</script>
+</head>
+<body>
+<form name="form1" onsubmit="return checkForm(this)">
+
+ user :<input type="text" name="name"/><br>
+   password :    <input name ="password"type="password"/><br>
+
+<input type="submit"/>
+
+</form>
+
+</body>
+</html>
